@@ -1,0 +1,23 @@
+.show-frontdesk {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-frontdesk {
+  /* height: 30px; */
+  display: block;
+  flex-basis: 15%;
+  margin: 10px;
+  /* width: 80px; */
+  border-radius: 15px;
+  font-size: xx-large;
+  border: 1px solid black;
+}
+
+.btn-frontdesk:hover {
+  color: white;
+  background-color: darkcyan;
+}

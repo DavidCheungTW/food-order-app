@@ -1,0 +1,61 @@
+.show-kitchen {
+  /* font-family: "Courier New", Courier, monospace; */
+  /* font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  align-items: center; */
+  height: 80vh;
+}
+
+.btn-kitchen {
+  /* height: 30px;
+  width: 80px; */
+  /* border-radius: 15px;
+  font-size: 20px; */
+}
+
+.btn-kitchen:hover {
+  /* color: white;
+  background-color: darkcyan; */
+}
+
+.keypad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* width: 240px; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65vh;
+  margin: 0;
+}
+
+.keyButton {
+  /* border-radius: 0ch; */
+  /* display: block; */
+  font-size: xx-large;
+  flex-basis: 33%;
+  /* border: 1px solid black; */
+  /* margin: 0;
+  padding: 0; */
+
+  /* height: 50px;
+  width: 80px; */
+}
+
+.keyButton:hover {
+  color: white;
+  background-color: darkcyan;
+}
+
+.display {
+  color: black;
+  height: 10vh;
+}
+
+.message {
+  color: orange;
+  height: 10vh;
+  margin: 0;
+}
