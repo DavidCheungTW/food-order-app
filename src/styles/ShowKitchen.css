@@ -5,6 +5,8 @@
   flex-direction: row;
   align-items: center; */
   height: 80vh;
+  /* border: 1px red solid; */
+  width: 100vw;
 }
 
 .btn-kitchen {
@@ -35,6 +37,7 @@
   /* border-radius: 0ch; */
   /* display: block; */
   font-size: xx-large;
+  font-weight: bolder;
   flex-basis: 33%;
   /* border: 1px solid black; */
   /* margin: 0;
