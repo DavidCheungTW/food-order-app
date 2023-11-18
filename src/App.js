@@ -68,16 +68,23 @@ function App() {
 
   const handleNext = (todo) => {
     let newStatus = todo.orderStatus;
+
     if (newStatus === "placed") {
       newStatus = "cooked";
+      update(ref(db, `/${todo.uuid}`), {
+        todo: todo.todoItem,
+        uuid: todo.uuid,
+        orderStatus: newStatus,
+      });
     } else if (newStatus === "cooked") {
-      newStatus = "completed";
+      // newStatus = "completed";
+      remove(ref(db, `/${todo.uuid}`));
     }
-    update(ref(db, `/${todo.uuid}`), {
-      todo: todo.todoItem,
-      uuid: todo.uuid,
-      orderStatus: newStatus,
-    });
+    // update(ref(db, `/${todo.uuid}`), {
+    //   todo: todo.todoItem,
+    //   uuid: todo.uuid,
+    //   orderStatus: newStatus,
+    // });
     setTodoItem("");
   };
 
